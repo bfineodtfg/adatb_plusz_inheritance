@@ -12,9 +12,12 @@ namespace adatb_plusz_inheritance
 {
     public partial class Form1 : Form
     {
+        databaseHandler db;
         public Form1()
         {
             InitializeComponent();
+            db = new databaseHandler();
+            db.ReadAll();
         }
     }
 }
